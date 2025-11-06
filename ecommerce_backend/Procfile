@@ -1,0 +1,2 @@
+web: gunicorn ecommerce_backend.wsgi:application --bind 0.0.0.0:$PORT
+worker: celery -A ecommerce_backend worker --loglevel=info
