@@ -21,7 +21,7 @@ DEBUG = config('DEBUG', default=True, cast=bool)
 RAILWAY_ENVIRONMENT = config('RAILWAY_ENVIRONMENT', default=None)
 
 if RAILWAY_ENVIRONMENT:
-    ALLOWED_HOSTS = ['*']  # Railway handles domain routing
+    ALLOWED_HOSTS = ['ecommerce-backend-production-8f1a.up.railway.app']  # Railway handles domain routing
 else:
     ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1').split(',')
 
