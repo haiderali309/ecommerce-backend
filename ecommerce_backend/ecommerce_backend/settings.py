@@ -25,6 +25,11 @@ if RAILWAY_ENVIRONMENT:
 else:
     ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1').split(',')
 
+
+
+APPEND_SLASH = False
+
+
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
