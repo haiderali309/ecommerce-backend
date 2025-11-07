@@ -4,6 +4,11 @@ from pathlib import Path
 from datetime import timedelta
 from decouple import config
 
+
+import os
+print("DEBUG DATABASE_URL:", os.getenv("DATABASE_URL"))
+
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
